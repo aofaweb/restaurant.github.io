@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&family=Port+Lligat+Sans&family=Tenor+Sans&display=swap');
+        
+        h2, h3, h4, h5, h6, span, p {
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        body {
+            background-color: #E6DFC0;
+            margin: 0;
+        }
+        header {
+            background-image: url(assets/images/jeswin-thomas-PtfRiBumfQU-unsplash.jpg);
+            width: 100%;
+            height: 800px;
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+        nav {
+            background-color: #00000080;
+            width: 100%;
+            padding: 16px;
+        }
+        nav li {
+          display: inline-block;
+          color: #fff;
+          font-size: 10pt; 
+          padding: 16px;
+        }
+        nav ul {
+            padding-inline-start: 0px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        nav img {
+            width: 20px;
+        }
+        h1{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .header-box {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            justify-content: center;
+        }
+        .header-box img {
+            width: 160px;
+            border: solid 2px #fff;
+            margin: 0 auto;
+            display: block;
+        }
+        .header-box h1 {
+            color: #fff;
+            font-size: 2em;
+            font-weight: 600;
+            margin-top: 5em;
+            text-align: center;
+        }
+        .header-box p {
+            color: #fff;
+            text-align: center;
+        }
+        .header-box li {
+          display: inline-block;
+          color: #fff;
+          font-size: 10pt; 
+          padding: 0px;
+        }
+        .header-box ul {
+            width: 45%;
+            margin: 0 auto;
+        }
+        .header-box-img  img{
+            width: 20px;
+            border: none;
+        }
+        .header-box a {
+            color: #fff;
+            text-align: center;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.5em;
+            margin: 0 auto;
+            text-decoration: none;
+            display: block;
+            text-align:  center;
+        }
+        section {
+            display: block;
+        }
+        .menu-box {
+            background-color: #31302E3D;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: auto;
+            border-radius: 3px;
+            box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+            margin: 24px 24px 80px 24px;
+            padding: 24px;  
+        }
+        .menu-box1 {
+            margin-top:-100px    
+        }
+        .container h3 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.7em;
+            text-align: center;
+            margin: 8px;
+            text-shadow:  1px 2px 3px #808080; 
+            padding-top: 8px;
+        }
+        .container h4 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.3em;
+            text-align: center;
+            margin: 8px;
+            font-family: 'Tenor Sans', sans-serif;
+            padding: 8px;
+        }
+        .sheet {
+            padding: 20px; 
+            background-color: #fff;
+            padding: 64px;
+            padding-bottom: 32px;
+            width: auto;
+        }
+        .sheet table {
+            width: 60%;
+        }
+        .sheet th{
+            text-align: left;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        .sheet td {
+            text-align: right;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        .sheet p {
+            font-style: italic;
+            color: #7e7e7e80;
+            margin: 0;
+            padding: 0;
+            width: 60%;
+            font-size: 10pt;
+            text-align: center;
+            font-family: 'Tenor Sans', sans-serif;
+        }
+        .sheet hr {
+            margin-bottom: 32px;
+            width: 60%;
+            margin-left:0px;
+            color: #7e7e7e80;
+        }
+        .container {
+            display: flex; 
+        }
+        .left-column {
+            flex: 1; 
+            padding: 0 48px; 
+        }
+        .right-column {
+            flex: 1.5; 
+        }
+        .photo {
+            max-width: 90%; 
+            height: auto; 
+            display: block; 
+            margin-bottom: 16px;
+            border-radius: 24px;
+            box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);  
+        }
+        
+    </style>
+</head>
+<body>
+ <header>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>MENU</li>
+            <li>OUR STORY</li>
+            <li>CONTACT US</li>
+            <li><img src="assets/images/phone.png"></li>
+            <li><img src="assets/images/ins.png"></li>
+            <li><img src="assets/images/env.png"></li>
+        </ul>
+    </nav>
+    <div class="header-box">
+        
+        <img src="assets/images/Garcia-Tavern-logos-transparent.png">
+
+        <h1>Srunning food, Amazing Quaility</h1>
+        <p>Let us host your next special occassion</p>
+        <div class="header-box-img">
+            <ul><li> <img src="assets/images/phone.png" alt="Image">
+            </li>   <li> <a>Contact US today</a></li>
+        </ul>
+        </div>
+    </div>
+ </header>
+
+ <section>
+    <div class="menu-box1"></div>
+    <div class="menu-box">
+        <div class="container">
+            <div class="left-column">
+            <img class="photo" src="assets/images/michael-discenza-Mxfcoxyc-H-Y-unsplash.jpg" alt="Photo 1">
+            <img class="photo" src="assets/images/izabela-rutkowski-Nme6-Tb-Wu-Vp-A-unsplash.jpg" alt="Photo 2">
+            </div>
+            <div class="right-column">
+                <h3>drink menu</h3>
+                <h4>Sprits, wine, and beer</h4>
+                <div class="sheet">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>vodka 1oz</th>
+                            <td>$6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>VODKA and choice of juice or soda.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Rum 1oz</th>
+                            <td>$6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>RUM and choice of juice or soda.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Whisky 1oz</th>
+                            <td>$6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Whisky and choice of juice or soda.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Tequila 1oz</th>
+                            <td>$6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Tequila and choice of juice or soda.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Red wine</th>
+                            <td>$8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>80z Red wine, ask server for our wine serection.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>White wine</th>
+                            <td>$8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>80z White wine, ask server for our wine serection.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sparkling wine</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>80z sparkling wine glass of your choice.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Domestic and foreige beer .</th>
+                            <td>$6 - 8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Domestic and foreige beer of your choice.</p>
+                <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="menu-box">
+        <div class="container">
+            <div class="left-column">
+            <img class="photo" src="assets/images/chad-montano-l-P5-MCM6n-Z5-A-unsplash.jpg" alt="Photo 1">
+            <img class="photo" src="assets/images/ella-olsson-4d-Qia-WKi-L-Y-unsplash.jpg" alt="Photo 2">
+            </div>
+            <div class="right-column">
+                <h3>food menu</h3>
+                <h4>Entress, mains, and handhelds</h4>
+                <div class="sheet">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Nachos</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>chees, onions, tomatoes.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Tacos.</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Chikin or beef with your choce of side.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Chikin rice bowl.</th>
+                            <td>$16</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>brown rice, and veggies, served with choice or sause</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Grilled chikin</th>
+                            <td>$15</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Juicy grilled chiken served with choice of sause.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Steak and fired beans.</th>
+                            <td>$15</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Steak and your choce of side.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>burrito.</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Your choice of beef or chiken.</p>
+                <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-box">
+        <div class="container">
+            <div class="left-column">
+            <img class="photo" src="assets/images/camille-paralisan-rq-NIBr-DGnh4-unsplash.jpg" alt="Photo 1">
+            <img class="photo" src="assets/images/oscar-nord-5-CPn8-NE2-Tc-unsplash.jpg" alt="Photo 2">
+            </div>
+            <div class="right-column">
+                <h3>desert menu</h3>
+                <h4>Dserts and sweets</h4>
+                <div class="sheet">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Chocolate cake .</th>
+                            <td>$7</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Loaded Chocolate cake with fudge topping.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>NY cheesecaka.</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>NY cheesecake topped with strawberry topping.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Apple pie.</th>
+                            <td>$6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Warm apple pie tooped with icecream.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>churros</th>
+                            <td>$7</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>pancake mix, water, oil, suger, cinamon.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sopaipillas</th>
+                            <td>$7</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Light, crispy pastry puffs, sopaillas are a sweet way to round out a spicy meal.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Creamy Caramel Flan.</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>A small slice of this impressively rich, creamy, caramel flan dessert goes a long way.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Shrtcut Tres Leches Cake</th>
+                            <td>$12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>My mon's favorite cake is tres les leches, a butter cake soaked in three kinds of milk.</p>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Pressure-Cooker Pumpkkin Flans</th>
+                            <td>$14</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>This silky, Smooth dessert captures the essence and elegance of fall..</p>
+                <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    
+    
+
+
+</body>
+</html>
